@@ -9,7 +9,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "generate-themes": "tamagui generate-themes ./scripts/theme-builder.ts ./theme/default.ts"
   },
   "jest": {
     "preset": "jest-expo"
@@ -18,6 +19,7 @@
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/bottom-tabs": "^7.0.0",
     "@react-navigation/native": "^7.0.0",
+    "@tamagui/cli": "^1.117.2",
     "@tamagui/config": "^1.117.2",
     "@tamagui/core": "^1.117.2",
     "@tamagui/lucide-icons": "^1.117.2",

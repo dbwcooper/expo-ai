@@ -1,6 +1,7 @@
 import { Image, StyleSheet } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { Button } from 'tamagui';
+import { ButtonDemo } from '@/components/WordsButton';
+import { CardDemo } from '@/components/WordCard';
 
 export default function HomeScreen() {
   return (
@@ -12,7 +13,8 @@ export default function HomeScreen() {
           style={styles.reactLogo}
         />
       }>
-      <Button theme="blue">Hello world</Button>
+      <ButtonDemo />
+      <CardDemo />
     </ParallaxScrollView>
   );
 }

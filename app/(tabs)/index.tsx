@@ -1,6 +1,7 @@
 import { Image, StyleSheet } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { Button } from 'tamagui';
+import { SheetDemo } from '@/components/WordDialog';
 
 export default function HomeScreen() {
   return (
@@ -12,7 +13,7 @@ export default function HomeScreen() {
           style={styles.reactLogo}
         />
       }>
-      <Button theme="blue">Hello world</Button>
+      <SheetDemo />
     </ParallaxScrollView>
   );
 }
