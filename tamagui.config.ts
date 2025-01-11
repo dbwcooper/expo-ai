@@ -1,12 +1,15 @@
 import { config } from '@tamagui/config/v3'
-import { createTamagui } from 'tamagui'
+import { createTamagui } from 'tamagui' // or '@tamagui/core'
 
-export const tamaguiConfig = createTamagui(config)
+const appConfig = createTamagui(config)
 
-export default tamaguiConfig
-
-export type Conf = typeof tamaguiConfig
+export type AppConfig = typeof appConfig
 
 declare module 'tamagui' {
-  interface TamaguiCustomConfig extends Conf {}
+  // or '@tamagui/core'
+  // overrides TamaguiCustomConfig so your custom types
+  // work everywhere you import `tamagui`
+  interface TamaguiCustomConfig extends AppConfig {}
 }
+
+export default appConfig

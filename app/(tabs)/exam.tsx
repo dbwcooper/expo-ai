@@ -1,9 +1,13 @@
 import { StyleSheet } from 'react-native';
 import { TabsDemo } from '@/components/WordsTabs';
+import DashboardScreen from '@/components/demos/DashboardScreen';
 
 export default function TabTwoScreen() {
   return (
+    <>
     <TabsDemo />
+    <DashboardScreen />
+    </>
   );
 }
 
